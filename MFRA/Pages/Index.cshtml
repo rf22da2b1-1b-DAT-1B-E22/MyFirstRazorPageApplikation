@@ -1,0 +1,14 @@
+﻿@page
+@using MFRA.model
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @foreach (Person person in @Model.Personer){
+        <p>@person</p>
+    }
+</div>
